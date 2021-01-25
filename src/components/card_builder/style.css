@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Formular-Black; 
+  src: url(../../fonts/Formular-Black.ttf);
+ }
+@font-face {
+font-family: Formular; 
+src: url(../../fonts/Formular.ttf);
+}
+.card_item{
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 540px;
+  background: #EFF0F5;
+  margin-right: 45px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.card_item:hover .card_item_text{
+  transition: min-height  0.6s ease 0s;
+  min-height:400px;
+}
+.card_item_text{
+  display: flex;
+  flex-direction: column;
+  min-height: 490px;
+  justify-content: space-between;
+  margin:20px 0 30px 30px ;
+  transition: min-height  0.6s ease 0s;
+}
+.card_item_company{
+  font-family: Formular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+}
+.card_item_description{
+  font-family: Formular-black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.card_item_button{
+  display:block;
+  margin: 0 0 30px 30px ;
+  width: 220px;
+  min-height: 60px;
+  background: conic-gradient(from 45deg at 0% 100%, #3E007B -31.88deg, #0085FF 31.88deg, #3E007B 328.12deg, #0085FF 391.87deg);
+  border-radius: 5px;
+  font-family: Formular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  outline: none;
+  border: 0;
+  color:white;
+}

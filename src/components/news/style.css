@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Formular-Black; 
+    src: url(../../fonts/Formular-Black.ttf);
+   }
+@font-face {
+ font-family: Formular; 
+ src: url(../../fonts/Formular.ttf);
+}
+
+.news_wrapper{
+    width: 100%;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    z-index: 5;
+}
+.news_header{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    font-family: Formular-Black;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+
+}
+.news_carousel{
+    margin-top: 55px;
+    width: calc(100vw - 26px);
+    overflow: hidden;
+}

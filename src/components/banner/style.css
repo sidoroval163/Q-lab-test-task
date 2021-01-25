@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Formular-Black; 
+    src: url(../../fonts/Formular-Black.ttf);
+   }
+@font-face {
+ font-family: Formular; 
+ src: url(../../fonts/Formular.ttf);
+}
+.banner_wrapper{
+    display: flex;
+    position:sticky;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1300px;
+    height: 648px;
+    background: #EFF0F5;
+    border-radius: 10px;
+    top: 70px;
+    z-index: 1;
+}
+.banner_header_text{
+    margin-left: 50px;
+    margin-top: 90px;
+    width: 565px;
+}
+.banner_header_text p{
+    font-family: Formular-Black;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 56px;
+    margin: 0;
+}
+.banner_header_text span{
+    transition-duration:2s;
+    transition: all .8s ease;
+    background-position: 100%;
+    background-image: linear-gradient(-90deg,#000 0%,#000 49.99%,#0085FF 50%,#3E007B 100%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Formular-Black;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 56px;
+    margin: 0;
+
+}
+
+.banner_main_text{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 565px;
+}
+.banner_main_text p{
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.banner_main_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 65px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background: conic-gradient(from 45deg at 0% 100%, #3E007B -31.88deg, #0085FF 31.88deg, #3E007B 328.12deg, #0085FF 391.87deg);
+    cursor: pointer;
+    border-radius: 5px; 
+    border: none;
+}
+.banner_main_button:hover{
+    cursor: pointer;
+    background: conic-gradient(from 64.69deg at 0% 100%, #3E007B -31.88deg, #0085FF 31.88deg, #3E007B 328.12deg, #0085FF 391.87deg);
+}
+.banner_main_button span{
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.banner_colored_sphere{
+    width: 501px;
+    height: 501px;  
+    margin-top: 60px;
+    margin-right:50px ;
+    background: conic-gradient(from 45deg at 0% 100%, #3E007B -31.88deg, #0085FF 31.88deg, #3E007B 328.12deg, #0085FF 391.87deg);
+    border-radius: 50%;
+}
+.banner_img{
+    position: relative;
+    top: -414px;
+    right: -40px;
+    width: 400px;
+    height: 501px;
+    z-index: 1;
+    background-image: url(../../img/hand.png);
+}

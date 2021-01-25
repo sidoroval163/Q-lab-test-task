@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Formular-Black; 
+    src: url(../../fonts/Formular-Black.ttf);
+   }
+@font-face {
+ font-family: Formular; 
+ src: url(../../fonts/Formular.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.header_wrapper{
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.9);
+}
+.left_header_block{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.company_name p{
+    font-family: Formular-Black;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: transparent;
+    background-clip: text;
+    background-image: conic-gradient(from 45deg at 0% 100%, #3E007B -31.88deg, #0085FF 31.88deg, #3E007B 328.12deg, #0085FF 391.87deg);
+}
+.options_list ul {
+    display: flex;
+    padding: 0;
+    margin-left: 20px;
+  }
+.options_list ul li {
+    font-family:Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    list-style: none;
+    white-space:nowrap;
+    margin-left:40px;
+    border-bottom: 1px solid;
+    border-color:#ffffff;
+  }
+  .options_list ul li:hover{
+    cursor: pointer;
+    border-bottom: 1px solid;
+   
+    border-image:  linear-gradient(-90deg,#0085FF 0%,#3E007B 100%) 1;
+  }
+.right_header_block{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.right_header_block span{
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+.right_header_block button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+    background: conic-gradient(from 45deg at 0% 100%, #3E007B -31.88deg, #0085FF 31.88deg, #3E007B 328.12deg, #0085FF 391.87deg);
+    cursor: pointer;
+    border-radius: 50%; 
+    border: none;
+}
+.right_header_block button:hover{
+    transform: rotate(360deg);
+    transition: ease-in-out 0.3s;
+}
+.right_header_block button span{
+    font-family: 'Courier New', Courier, monospace;
+    color:#FFFFFF;
+    font-size: 36px;
+    padding-top: 3px;
+}
+.right_header_block button:focus{
+    outline: none;
+}

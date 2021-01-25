@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Formular-Black; 
+    src: url(../../fonts/Formular-Black.ttf);
+   }
+@font-face {
+ font-family: Formular; 
+ src: url(../../fonts/Formular.ttf);
+}
+.carousel{
+  width: 100%;
+  margin-top: 5px;
+}
+.carousel_buttons_container{
+top:-254px;
+display: flex;
+position: relative;
+justify-content: center;
+z-index: 6;
+}
+.carousel_buttons_block{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+.left_button{
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    background-image: url(../../img/arrowhorizontal.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    transition: all 0.6s ease-out;
+}
+.right_button{
+    
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    background-image: url(../../img/arrowhorizontal.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    transform: rotate(180deg);
+    transition: all 0.6s ease-out;
+    
+}
+.left_button:hover{
+    width: 79px;
+    height: 79px;
+    transition: all 0.6s ease-out;
+    
+}
+.right_button:hover{
+    width: 79px;
+    height: 79px;
+    transition: all 0.6s ease-out;
+}
+.carousel_items_container{
+    
+    position: relative;
+    width: 600px;
+    top:0;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    transition: all 0.6s ease-out;
+    margin: 0 auto;
+}
+.carousel_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #EFF0F5;
+    border-radius: 10px;
+    width: 270px;
+    height: 460px;
+    margin-right: 30px;
+    flex-shrink: 0;
+    transition: all 0.6s ease-out;
+}
+.carousel_item_header{
+    margin:20px 30px 0 30px;
+    font-family: Formular-Black;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.carousel_item_description{
+    margin:0 30px 30px 30px;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+}
+.carousel_item:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all 0.6s ease-out;
+}
+.progress_bar{
+    height: 0px;
+    width: 1200px;
+    border: 1px solid #C8C8C8;
+    background:#C8C8C8 ;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.filler{
+    position: relative;
+    top:-2px;
+    left:-2px;
+    height: 100%;
+    border-radius: inherit;
+    transition: width .2s ease-in;
+    border: 2px solid #000000;
+    background:#000000 ;
+
+}

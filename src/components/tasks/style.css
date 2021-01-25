@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Formular-Black; 
+    src: url(../../fonts/Formular-Black.ttf);
+   }
+@font-face {
+ font-family: Formular; 
+ src: url(../../fonts/Formular.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.tasks_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    margin-top: 70px;
+    z-index: 5;
+    background-color: white;
+}
+.tasks_text{
+    margin:90px 50px 0 50px;
+    padding-bottom: 30px;
+}
+.tasks_text_header{
+    margin:0;
+    font-family: Formular-Black;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+.tasks_text_main{
+    margin:0;
+    margin-top: 30px;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+}
+.menus_blocks{
+    margin: 0 50px 0 50px;
+    border-bottom:1px solid #000000;
+}
