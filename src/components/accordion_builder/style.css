@@ -2,10 +2,17 @@
 font-family: Formular; 
 src: url(../../fonts/Formular.ttf);
 }
+.accordion_wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .accordion_item {
   overflow: hidden;
   transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
   height: auto;
+  width: calc(100% + 30px);
   max-height: 9999px;
 }
 .accordion_item.collapsed {
@@ -13,10 +20,12 @@ src: url(../../fonts/Formular.ttf);
   transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
 }
 .accordion_title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   position: sticky;
   top: 70px;
   cursor: pointer;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: Formular;
@@ -31,16 +40,15 @@ src: url(../../fonts/Formular.ttf);
   background: rgba(255, 255, 255, 0.9);
   
 }
-
-
 .accordion_title:hover{
   letter-spacing: 0.05em;
   transition: letter-spacing 0.6s ;
 }
 .arrow{
-  width: 15px;
+  width: 18px;
   height: 31px;
   background-image: url(../../img/arrow.png);
+  background-repeat: no-repeat;
   transition: transform 0.6s;
   margin-right:30px;
 }
@@ -50,10 +58,34 @@ src: url(../../fonts/Formular.ttf);
 .accordion_content{
   display: flex;
   flex-wrap:wrap;
-  width:calc(100% + 45px)
+  flex-direction: row;
+  justify-content:center;
+  margin-bottom: 60px;
+  align-items: center;
 
 }
-
-
+@media screen and (max-width: 1296px) {
+  .accordion_title {
+    top: 55px;}
+}
+@media screen and (max-width: 1206px) {
+  .accordion_title {
+    font-size: 18px;
+    z-index: 130;
+  }
+  .arrow{
+    margin: 0;
+    width: 15px;
+    z-index: 50;
+  }
+  .accordion_item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+.accordion_title span{
+  width: 80%;
+}
+}
 
 

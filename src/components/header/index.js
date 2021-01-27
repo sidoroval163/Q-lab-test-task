@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './style.css';
 
 
 const Header = () => {
+    const [menuStatus, setMenuStatus] = useState(0);
+    const burgerRef = useRef(null);
+    const menuRef = useRef(null);
+    const burgerChange = () => {
+        setMenuStatus(!menuStatus);
+        burgerRef.current.classList.contains('active') ?
+            burgerRef.current.classList.toggle('not_active') : burgerRef.current.classList.toggle('active');
+        !menuStatus ? menuRef.current.classList.add('active') : menuRef.current.classList.remove('active');
+    };
+
+
     return (
         <div className="header_wrapper">
             <div className="left_header_block">
@@ -21,6 +32,21 @@ const Header = () => {
             <div className="right_header_block">
                 <span>info@q-lab.group</span>
                 <button><span>+</span></button>
+            </div>
+            <div className="burger_container" onClick={() => { burgerChange() }}>
+                <div className="burger" ref={burgerRef} >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div className="dropdown_menu" ref={menuRef}>
+                <ul>
+                    <li>О нас</li>
+                    <li>Кейсы</li>
+                    <li>Услуги</li>
+                    <li>Контакты</li>
+                </ul>
             </div>
         </div>
     )

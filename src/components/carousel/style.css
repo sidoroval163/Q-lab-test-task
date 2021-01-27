@@ -11,7 +11,7 @@
   margin-top: 5px;
 }
 .carousel_buttons_container{
-top:-254px;
+top:-380px;
 display: flex;
 position: relative;
 justify-content: center;
@@ -19,7 +19,7 @@ z-index: 6;
 }
 .carousel_buttons_block{
     display: flex;
-    width: 1200px;
+    width: 1180px;
     justify-content: space-between;
 }
 .left_button{
@@ -59,16 +59,15 @@ z-index: 6;
     transition: all 0.6s ease-out;
 }
 .carousel_items_container{
-    
     position: relative;
-    width: 600px;
+    margin-left: 130px;
+    width: fit-content;
     top:0;
     z-index: 4;
     display: flex;
     flex-direction: row;
     overflow: visible;
     transition: all 0.6s ease-out;
-    margin: 0 auto;
 }
 .carousel_item{
     display: flex;
@@ -104,12 +103,18 @@ z-index: 6;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: all 0.6s ease-out;
 }
+.progress_bar_container{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 .progress_bar{
+    display: flex;
     height: 0px;
-    width: 1200px;
+    width: 100%;
     border: 1px solid #C8C8C8;
     background:#C8C8C8 ;
-    margin: 0 auto;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .filler{
@@ -122,4 +127,30 @@ z-index: 6;
     border: 2px solid #000000;
     background:#000000 ;
 
+}
+@media screen and (max-width: 1296px){
+    .progress_bar{
+        width: 100%;
+        margin-right: 35px;
+        margin-left: 35px;
+     }
+    }
+@media screen and (max-width: 1206px) {
+.carousel_buttons_block{
+    margin: 0 30px 0 30px;
+    width: 100%;
+}
+.progress_bar_container{
+   justify-content: center;
+   margin :0;
+   
+}
+.progress_bar{
+   width: 100%;
+   margin-right: 35px;
+   margin-left: 35px;
+}
+.carousel_items_container{
+   margin-left: 40px;
+}
 }

@@ -6,26 +6,26 @@ import CardBuilder from "../card_builder";
 
 const Accordion = ({ title, fist, data }) => {
     const [isOpen, setOpen] = useState(false);
-    const sensitive = useRef();
-    const content = useRef();
+    const sensitiveRef = useRef();
+    const contentRef = useRef();
     useEffect(() => {
         if (fist) { setOpen(isOpen => !isOpen) }
     }, [fist]);
     const scrollOnclick = () => {
         setOpen(isOpen => !isOpen);
-        sensitive.current.scrollIntoView({ block: "start", inline: "nearest" });
+        sensitiveRef.current.scrollIntoView({ block: "start", inline: "nearest" });
     }
 
     return (
         <div className="accordion_wrapper" >
             <div className={`accordion_title ${isOpen ? "open" : ""}`}
                 onClick={() => scrollOnclick()}
-                ref={sensitive}
+                ref={sensitiveRef}
             >
-                {title}
+                <span>{title}</span>
                 <div className={`arrow ${isOpen ? "rotated" : ""}`}></div>
             </div>
-            <div className={`accordion_item ${!isOpen ? "collapsed" : ""}`} ref={content}>
+            <div className={`accordion_item ${!isOpen ? "collapsed" : ""}`} ref={contentRef}>
                 <div className="accordion_content"><CardBuilder data={data} /></div>
             </div>
         </div>

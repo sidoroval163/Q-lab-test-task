@@ -11,7 +11,7 @@ const App = () => {
     <div className="App">
       <Suspense fallback={
         <div className="loader">
-          <div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div className="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </div>}>
         <Header />
         <Banner />

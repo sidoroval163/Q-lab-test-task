@@ -6,30 +6,65 @@
  font-family: Formular; 
  src: url(../../fonts/Formular.ttf);
 }
-
-.news_wrapper{
+.news_overflow{
     width: 100%;
+    z-index: 5;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.news_wrapper{
+    width: 1280px;
     padding-top: 90px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: white;
-    z-index: 5;
+   
+    
 }
 .news_header{
     display: flex;
     flex-direction: column;
-    width: 1200px;
     font-family: Formular-Black;
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
     line-height: 44px;
     color: #000000;
-
+    margin-left: 50px;
 }
 .news_carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 55px;
-    width: calc(100vw - 26px);
-    overflow: hidden;
+    overflow: visible;
+}
+@media screen and (max-width: 1296px){
+.news_wrapper{
+    width: 100%;
+    }
+}
+@media screen and (max-width: 1206px) {
+    .news_wrapper{
+        width: 100%;
+        padding-top: 60px;
+
+    }
+    .news_header{
+        width: 100%;
+        margin-left: 35px;
+    }
+    .news_header span{
+      
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .news_carousel{
+        display: flex;
+        margin-top: 55px;
+        width: 100%;
+        overflow: hidden;
+    }
 }
