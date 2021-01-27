@@ -13,8 +13,6 @@ const Carousel = () => {
     const containerRef = useRef(null);
     const carouselRef = useRef(null);
     useEffect(() => {
-        console.log(document.body.clientWidth, "ширина окна клиента");
-        console.log(containerItems, itemsVisible, "всего итемов, видимых итемов")
         setContainerItemsAmount(Math.round((containerRef.current.offsetWidth) / 300));
         (document.body.clientWidth <= 935) ? setItemsVisible(Math.round((carouselRef.current.offsetWidth - 150) / 300)) :
             (document.body.clientWidth <= 1325) ? setItemsVisible(Math.round((carouselRef.current.offsetWidth - 300) / 300)) :
